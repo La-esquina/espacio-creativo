@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espacio Creativo — La Esquina</title>
+<meta name="description" content="El Espacio Creativo de La Esquina: Sala 1 y Sala 2 para planificar, crear, producir y compartir proyectos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+    <div class="header-inner">
+        <a href="../index.html" class="logo">
+            LA ESQUINA <span class="logo-tag">Espacio Creativo</span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#espacio" class="nav-link">El Espacio</a>
+            <a href="#salas" class="nav-link">Salas</a>
+            <a href="#actividades" class="nav-link">Actividades</a>
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+            <a href="#reservas" class="nav-link">Reservas</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="../index.html" class="btn btn-outline btn-small">Volver a La Esquina</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="hero-content reveal">
+                <p class="eyebrow">La Esquina / Espacio Creativo</p>
+                <h1 class="hero-title">Donde una idea toma forma.</h1>
+                <p class="hero-desc">Un espacio flexible para pensar, planificar, crear, producir y transformar una idea en un proyecto.</p>
+                <div class="hero-actions">
+                    <a href="#salas" class="btn btn-primary">Conocer las salas</a>
+                    <a href="#reservas" class="btn btn-outline">Reservar espacio</a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-hidden="true">
+                <div class="panel panel-room">
+                    <span class="panel-dot"></span>
+                    <span class="panel-title">Sala 1</span>
+                    <span class="panel-sub">Reunión &amp; Planificación</span>
+                </div>
+                <div class="panel panel-room panel-room-2">
+                    <span class="panel-dot"></span>
+                    <span class="panel-title">Sala 2</span>
+                    <span class="panel-sub">Creación &amp; Producción</span>
+                </div>
+                <div class="panel panel-project">
+                    <span class="panel-tag">Proyecto</span>
+                    <span class="panel-title">Identidad visual</span>
+                    <div class="mini-bar"><span style="width:65%"></span></div>
+                </div>
+                <svg class="hero-lines" viewBox="0 0 400 400" aria-hidden="true">
+                    <line x1="70" y1="90" x2="230" y2="230" />
+                    <line x1="230" y1="230" x2="330" y2="130" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EL ESPACIO ===================== -->
+    <section class="about" id="espacio">
+        <div class="section-inner">
+            <div class="about-head">
+                <p class="eyebrow reveal">Sobre el espacio</p>
+                <h2 class="section-title reveal">Un espacio para crear.</h2>
+                <p class="section-lead reveal">El Espacio Creativo de La Esquina está pensado para adaptarse a diferentes formas de trabajo: reuniones, producción, estudio, creación y desarrollo de proyectos.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-block reveal">
+                    <span class="about-num">01</span>
+                    <h3>Planificar</h3>
+                    <p>Organizá una idea antes de empezar.</p>
+                </div>
+                <div class="about-block reveal">
+                    <span class="about-num">02</span>
+                    <h3>Crear</h3>
+                    <p>Convertí una idea en algo real.</p>
+                </div>
+                <div class="about-block reveal">
+                    <span class="about-num">03</span>
+                    <h3>Producir</h3>
+                    <p>Un espacio preparado para trabajar.</p>
+                </div>
+                <div class="about-block reveal">
+                    <span class="about-num">04</span>
+                    <h3>Compartir</h3>
+                    <p>Mostrá tu proyecto y trabajá con otros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SALAS ===================== -->
+    <section class="rooms" id="salas">
+        <div class="section-inner">
+            <p class="eyebrow center reveal">Los espacios</p>
+            <h2 class="section-title center reveal">Nuestras salas</h2>
+
+            <div class="rooms-grid">
+
+                <article class="room-card reveal" data-room="1">
+                    <div class="room-head">
+                        <span class="room-index">Sala 1</span>
+                        <h3 class="room-sub">Reunión &amp; Planificación</h3>
+                    </div>
+                    <p class="room-desc">Un espacio pensado para reuniones, trabajo en equipo, planificación y presentación de ideas.</p>
+                    <ul class="room-features">
+                        <li>Mesa de reunión</li>
+                        <li>Espacio para grupos</li>
+                        <li>Pantalla o panel de presentación</li>
+                        <li>WiFi</li>
+                        <li>Enchufes</li>
+                    </ul>
+                    <button type="button" class="btn btn-room" data-toggle-room="1">Ver Sala 1</button>
+                    <div class="room-detail" id="roomDetail1" hidden>
+                        <p><strong>Capacidad:</strong> hasta 10 personas.</p>
+                        <p><strong>Ideal para:</strong> reuniones de equipo, planificación de proyectos y presentaciones a clientes.</p>
+                    </div>
+                </article>
+
+                <article class="room-card reveal" data-room="2">
+                    <div class="room-head">
+                        <span class="room-index">Sala 2</span>
+                        <h3 class="room-sub">Creación &amp; Producción</h3>
+                    </div>
+                    <p class="room-desc">Un espacio más flexible para producir contenido, desarrollar proyectos y trabajar de manera creativa.</p>
+                    <ul class="room-features">
+                        <li>Mesas de trabajo</li>
+                        <li>Espacio flexible</li>
+                        <li>Zona cómoda</li>
+                        <li>WiFi</li>
+                        <li>Conectividad</li>
+                    </ul>
+                    <button type="button" class="btn btn-room" data-toggle-room="2">Ver Sala 2</button>
+                    <div class="room-detail" id="roomDetail2" hidden>
+                        <p><strong>Capacidad:</strong> hasta 8 personas, en formato flexible.</p>
+                        <p><strong>Ideal para:</strong> producción de contenido, trabajo creativo individual o en grupos chicos.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACTIVIDADES ===================== -->
+    <section class="activities" id="actividades">
+        <div class="section-inner">
+            <p class="eyebrow center reveal">Posibilidades</p>
+            <h2 class="section-title center reveal">¿Qué podés hacer?</h2>
+
+            <div class="activities-grid">
+                <div class="activity-card reveal">
+                    <span class="activity-icon">🧑‍🤝‍🧑</span>
+                    <h3>Reuniones</h3>
+                    <p>Trabajo en equipo y planificación.</p>
+                </div>
+                <div class="activity-card reveal">
+                    <span class="activity-icon">📚</span>
+                    <h3>Estudio</h3>
+                    <p>Espacio tranquilo para concentrarse.</p>
+                </div>
+                <div class="activity-card reveal">
+                    <span class="activity-icon">🎬</span>
+                    <h3>Creación de contenido</h3>
+                    <p>Fotografía, video, diseño y producción.</p>
+                </div>
+                <div class="activity-card reveal">
+                    <span class="activity-icon">🚀</span>
+                    <h3>Proyectos</h3>
+                    <p>Desarrollo de ideas individuales o grupales.</p>
+                </div>
+                <div class="activity-card reveal">
+                    <span class="activity-icon">📊</span>
+                    <h3>Presentaciones</h3>
+                    <p>Compartir avances o propuestas.</p>
+                </div>
+                <div class="activity-card reveal">
+                    <span class="activity-icon">✨</span>
+                    <h3>Talleres</h3>
+                    <p>Encuentros y actividades creativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section class="projects" id="proyectos">
+        <div class="section-inner">
+            <p class="eyebrow center reveal">Solo demostrativo</p>
+            <h2 class="section-title center reveal">Proyectos en proceso</h2>
+
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <span class="project-status status-progress">En proceso</span>
+                    <h3 class="project-title">Identidad visual</h3>
+                    <p class="project-sub">Diseño de marca</p>
+                    <div class="progress-bar"><span style="width:65%"></span></div>
+                </article>
+
+                <article class="project-card reveal">
+                    <span class="project-status status-plan">Planificación</span>
+                    <h3 class="project-title">Contenido digital</h3>
+                    <p class="project-sub">Producción audiovisual</p>
+                    <div class="progress-bar"><span style="width:30%"></span></div>
+                </article>
+
+                <article class="project-card reveal">
+                    <span class="project-status status-present">Presentación</span>
+                    <h3 class="project-title">Proyecto colaborativo</h3>
+                    <p class="project-sub">Trabajo en equipo</p>
+                    <div class="progress-bar"><span style="width:90%"></span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="gallery" id="galeria">
+        <div class="section-inner">
+            <p class="eyebrow center reveal">Un vistazo</p>
+            <h2 class="section-title center reveal">Así se ve el Espacio.</h2>
+            <p class="section-lead center reveal">Imágenes de referencia — pronto vamos a reemplazarlas por fotos reales.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-card gc-1 reveal"><span class="gallery-label">Sala de reuniones</span></div>
+                <div class="gallery-card gc-2 reveal"><span class="gallery-label">Zona de trabajo</span></div>
+                <div class="gallery-card gc-3 reveal"><span class="gallery-label">Producción</span></div>
+                <div class="gallery-card gc-4 reveal"><span class="gallery-label">Proyecto colaborativo</span></div>
+                <div class="gallery-card gc-5 reveal"><span class="gallery-label">Presentación</span></div>
+                <div class="gallery-card gc-6 reveal"><span class="gallery-label">Espacio flexible</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RESERVAS ===================== -->
+    <section class="reservations" id="reservas">
+        <div class="section-inner">
+            <p class="eyebrow center reveal">Reservá tu lugar</p>
+            <h2 class="section-title center reveal">Reservá una sala</h2>
+            <p class="section-lead center reveal">Contanos qué necesitás y te ayudamos a organizarlo.</p>
+
+            <form class="reservation-form reveal" id="reservationForm" novalidate>
+                <div class="form-row">
+                    <label class="form-field">
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    </label>
+                    <label class="form-field">
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="tu@email.com" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label class="form-field">
+                        <span>Sala</span>
+                        <select name="sala" required>
+                            <option value="" disabled selected>Elegir sala</option>
+                            <option value="sala1">Sala 1 — Reunión &amp; Planificación</option>
+                            <option value="sala2">Sala 2 — Creación &amp; Producción</option>
+                            <option value="cualquiera">Cualquiera disponible</option>
+                        </select>
+                    </label>
+                    <label class="form-field">
+                        <span>Cantidad de personas</span>
+                        <input type="number" name="personas" min="1" max="20" placeholder="4" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label class="form-field">
+                        <span>Fecha</span>
+                        <input type="date" name="fecha" required>
+                    </label>
+                    <label class="form-field">
+                        <span>Horario</span>
+                        <input type="time" name="horario" required>
+                    </label>
+                    <label class="form-field">
+                        <span>Tipo de actividad</span>
+                        <select name="actividad" required>
+                            <option value="" disabled selected>Elegir tipo</option>
+                            <option value="reunion">Reunión</option>
+                            <option value="estudio">Estudio</option>
+                            <option value="proyecto">Proyecto</option>
+                            <option value="produccion">Producción</option>
+                            <option value="taller">Taller</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large form-submit">Solicitar reserva</button>
+
+                <p class="form-message" id="formMessage" role="status" aria-live="polite" hidden></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== MAPA 3D ===================== -->
+    <section class="map-teaser">
+        <div class="section-inner map-teaser-inner">
+            <div>
+                <p class="eyebrow reveal">Ubicación</p>
+                <h2 class="section-title reveal">Ubicá el Espacio Creativo</h2>
+                <p class="map-teaser-text reveal">Explorá La Esquina en 3D y descubrí dónde se encuentran Sala 1 y Sala 2.</p>
+            </div>
+            <a href="../mapa/index.html" class="btn btn-primary btn-large reveal">Ver mapa 3D</a>
+        </div>
+    </section>
+
+    <!-- ===================== SEGUÍ RECORRIENDO ===================== -->
+    <section class="cross-nav">
+        <div class="section-inner">
+            <p class="eyebrow center reveal">Seguí recorriendo</p>
+            <h2 class="section-title center reveal">Seguí recorriendo La Esquina</h2>
+
+            <div class="cross-grid">
+                <a href="../cafeteria/index.html" class="cross-card cross-cafe reveal">
+                    <span class="cross-icon">☕</span>
+                    <span class="cross-name">Cafetería</span>
+                    <span class="cross-text">Donde empieza la experiencia.</span>
+                </a>
+                <a href="../bar/index.html" class="cross-card cross-bar reveal">
+                    <span class="cross-icon">🎤</span>
+                    <span class="cross-name">Bar</span>
+                    <span class="cross-text">Donde las ideas se comparten.</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="section-inner footer-inner">
+        <div class="footer-brand">
+            <p class="footer-logo">LA ESQUINA</p>
+            <p class="footer-tagline">Espacio Creativo</p>
+        </div>
+
+        <nav class="footer-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../cafeteria/index.html">Cafetería</a>
+            <a href="../bar/index.html">Bar</a>
+            <a href="../mapa/index.html">Mapa 3D</a>
+        </nav>
+
+        <p class="footer-motto">Pensá • Creá • Compartí</p>
+        <p class="footer-year">Proyecto 2026</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
