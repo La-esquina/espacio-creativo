@@ -272,7 +272,14 @@ ul { margin: 0; padding: 0; list-style: none; }
     box-shadow: var(--shadow-soft); transition: transform 0.3s ease;
 }
 .gallery-card:hover { transform: translateY(-4px); }
-.gallery-label { font-family: var(--font-display); font-weight: 600; font-size: 15.5px; color: #fff; position: relative; z-index: 1; }
+
+.gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.gallery-card::after {
+    content: ''; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg, rgba(17, 12, 26, 0) 35%, rgba(17, 12, 26, 0.78) 100%);
+}
+
+.gallery-label { font-family: var(--font-display); font-weight: 600; font-size: 15.5px; color: #fff; position: relative; z-index: 2; }
 
 .gc-1 { background: linear-gradient(155deg, #b9a8e0, #4f3780); }
 .gc-2 { background: linear-gradient(155deg, #8f7fc7, #2c2043); }
